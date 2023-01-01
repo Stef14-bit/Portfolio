@@ -1,0 +1,18 @@
+.desktop_elements {
+  height: 100vh;
+  width: 160px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop_elements p {
+  color: white;
+  padding: 5px;
+}
+.desktop_elements img {
+  margin: auto;
+  display: block;
+}

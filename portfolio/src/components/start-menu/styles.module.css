@@ -1,0 +1,55 @@
+.start_menu {
+  width: 500px;
+  height: 650px;
+  background-color: white;
+  position: absolute;
+  border-top-right-radius: 10px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(43, 78, 255) 95%
+  );
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top_items {
+  height: 10%;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10px;
+}
+.top_items h2 {
+  color: white;
+  margin-left: 10px;
+}
+
+.content {
+  background-color: aqua;
+
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  height: 80%;
+}
+
+.bottom_items {
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bottom_items button {
+  border: none;
+  background: none;
+}
+.bottom_items img {
+  height: 30px;
+  width: 30px;
+}
+.bottom_items p {
+  color: white;
+  margin: 0 10px;
+}

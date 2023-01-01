@@ -1,0 +1,27 @@
+#top_border {
+  height: 35px;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.window {
+  position: absolute;
+  z-index: 1;
+  height: 500px;
+  width: 500px;
+  max-width: 99vw;
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 3px solid blue;
+  border-radius: 10px 10px 0px 0px;
+  resize: both;
+  overflow: auto;
+}
+.container {
+  position: absolute;
+  height: calc(100vh - 40px);
+  width: 100vw;
+}

@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-function DesktopElement({ icon, iconTitle }) {
+function DesktopElement({ icon, iconTitle, children, onClick }) {
   return (
-    <div className={styles.desktop_element}>
+    <button className={styles.desktop_element} onClick={onClick}>
       <img src={icon} alt="icon" />
       <p>{iconTitle}</p>
-    </div>
+      {children}
+    </button>
   );
 }
 

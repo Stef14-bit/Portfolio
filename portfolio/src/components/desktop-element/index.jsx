@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.css";
+import Window from "../window";
 
-function DesktopElement({ icon, iconTitle, children, onClick }) {
+function DesktopElement({ icon, iconTitle, children }) {
+  const [window, setWindow] = useState(false);
+
   return (
-    <button className={styles.desktop_element} onClick={onClick}>
+    <div className={styles.desktop_element} onClick={() => setWindow(!window)}>
       <img src={icon} alt="icon" />
       <p>{iconTitle}</p>
-      {children}
-    </button>
+      {window && <Window onClick={() => setWindow(false)}>{children}</Window>}
+    </div>
   );
 }
 

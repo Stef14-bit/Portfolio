@@ -1,6 +1,6 @@
 .start_menu {
-  width: 500px;
-  height: 650px;
+  width: 27rem;
+  height: 32rem;
   background-color: white;
   position: absolute;
   border-top-right-radius: 10px;
@@ -46,8 +46,8 @@
   background: none;
 }
 .bottom_items img {
-  height: 30px;
-  width: 30px;
+  height: 2rem;
+  width: 2rem;
 }
 .bottom_items p {
   color: white;

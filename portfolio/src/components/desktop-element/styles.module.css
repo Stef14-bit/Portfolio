@@ -2,7 +2,5 @@
   background-color: rgba(30, 30, 148, 0.607);
 }
 .desktop_element {
-  margin-top: 10px;
-  border: none;
-  background-color: transparent;
+  padding: 0.5rem;
 }

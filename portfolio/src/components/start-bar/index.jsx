@@ -29,7 +29,12 @@ function Start() {
       {open && (
         <StartMenu userImg={astronaut} userName={"Stefan"}>
           <div className={styles.start_items}>
-            <DesktopElement icon={internetex} iconTitle={"Internet"} />
+            <DesktopElement
+              icon={internetex}
+              iconTitle={"Internet"}
+              iconSubtitle={"Go online"}
+            />
+
             <DesktopElement icon={email} iconTitle={"E-mail"} />
             <hr className={styles.divider} />
             <DesktopElement icon={mydocuments} iconTitle={"My Documents"} />
@@ -37,9 +42,10 @@ function Start() {
             <DesktopElement icon={mynetwork} iconTitle={"My Network"} />
             <DesktopElement icon={recycle} iconTitle={"Recycle Bin"} />
             <hr className={styles.divider} />
-            <h3>
+            <br />
+            <h4>
               More Programs <img src={morestart} alt="more programs" />
-            </h3>
+            </h4>
           </div>
         </StartMenu>
       )}

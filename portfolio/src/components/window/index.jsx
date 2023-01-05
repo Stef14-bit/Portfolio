@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import Draggable from "react-draggable";
 
-function Window({ children, onClick, bounds }) {
+function Window({ children, onClick, bounds, xpos, ypos }) {
   return (
     <div className={styles.container}>
       <Draggable handle=".handle" bounds={bounds}>

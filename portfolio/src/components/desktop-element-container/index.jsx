@@ -2,6 +2,7 @@ import mycomputer from "../../assets/icons/mycomputer.ico";
 import mydocuments from "../../assets/icons/mydocuments.ico";
 import mynetwork from "../../assets/icons/mynetwork.ico";
 import recycle from "../../assets/icons/recycle.ico";
+import resume from "../../assets/resume.pdf";
 import github from "../../assets/icons/github.png";
 import DesktopElement from "../desktop-element";
 import styles from "./styles.module.css";
@@ -23,11 +24,7 @@ function DesktopContainer() {
         />
       </DesktopElement>
       <DesktopElement icon={mydocuments} iconTitle={"My Documents"}>
-        <Iframe
-          src="file:///C:/Users/stefa/OneDrive/Desktop/Stefan_Ivanus_Resume.pdf"
-          width="100%"
-          height="100%"
-        />
+        <Iframe src={resume} width="100%" height="100%" />
       </DesktopElement>
       <DesktopElement icon={mynetwork} iconTitle={"Network"}>
         network 1{" "}
@@ -35,9 +32,13 @@ function DesktopContainer() {
       <DesktopElement icon={recycle} iconTitle={"Recycle Bin"}>
         recycle 1{" "}
       </DesktopElement>
-      <DesktopElement icon={github} iconTitle={"GitHub"}>
-        recycle 1{" "}
-      </DesktopElement>
+
+      <a
+        href="https://www.linkedin.com/in/stefan-ivanus-941455250/"
+        target="_blank"
+        rel="noopener noreferrer">
+        <DesktopElement icon={github} iconTitle={"GitHub"}></DesktopElement>
+      </a>
     </section>
   );
 }

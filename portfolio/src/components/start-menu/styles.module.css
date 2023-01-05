@@ -1,6 +1,6 @@
 .start_menu {
   width: 27rem;
-  height: 32rem;
+  height: 35rem;
   background-color: white;
   position: absolute;
   border-top-right-radius: 10px;
@@ -15,7 +15,7 @@
   justify-content: space-between;
 }
 .top_items {
-  height: 10%;
+  height: 15%;
   border-top-right-radius: 10px;
   display: flex;
   justify-content: flex-start;
@@ -28,7 +28,7 @@
 }
 
 .content {
-  background-color: aqua;
+  background-color: rgb(105, 145, 145);
 
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
@@ -36,7 +36,7 @@
 }
 
 .bottom_items {
-  height: 10%;
+  height: 15%;
   display: flex;
   justify-content: flex-end;
   align-items: center;

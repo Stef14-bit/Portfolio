@@ -1,12 +1,13 @@
 import mycomputer from "../../assets/icons/mycomputer.ico";
 import mydocuments from "../../assets/icons/mydocuments.ico";
-import mynetwork from "../../assets/icons/mynetwork.ico";
+import msn from "../../assets/icons/msn.ico";
 import recycle from "../../assets/icons/recycle.ico";
 import resume from "../../assets/resume.pdf";
+import folder from "../../assets/icons/folder.ico";
 import github from "../../assets/icons/github.png";
-import DesktopElement from "../desktop-element";
 import styles from "./styles.module.css";
 import Iframe from "react-iframe";
+import Window from "../window";
 
 // need desktop elements container to fix a problem with
 // react-draggable package where if you drag the window out of
@@ -15,30 +16,29 @@ import Iframe from "react-iframe";
 function DesktopContainer() {
   return (
     <section className={styles.desktop_elements}>
-      <DesktopElement icon={mycomputer} iconTitle={"My Computer"}>
+      <Window icon={mydocuments} iconTitle={"My Documents"}>
+        <h1>MY documents</h1>
+      </Window>
+
+      <Window icon={mycomputer} iconTitle={"My Computer"}>
+        <h1>MY computer</h1>
+      </Window>
+      <Window icon={recycle} iconTitle={"Recycle Bin"}>
+        <h1>MY recycle bin</h1>
+      </Window>
+      <Window icon={folder} iconTitle={"My Resume"}>
+        <Iframe src={resume} width="100%" height="100%" />
+      </Window>
+      <Window icon={msn} iconTitle={"MSN"}>
+        <h1>insert contact form here!!</h1>
+      </Window>
+      <Window icon={github} iconTitle={"GitHub"}>
         <Iframe
-          src="https://www.linkedin.com/in/stefan-ivanus-941455250/"
+          src={"https://github.com/Stef14-bit"}
           width="100%"
           height="100%"
-          title="github"
         />
-      </DesktopElement>
-      <DesktopElement icon={mydocuments} iconTitle={"My Documents"}>
-        <Iframe src={resume} width="100%" height="100%" />
-      </DesktopElement>
-      <DesktopElement icon={mynetwork} iconTitle={"Network"}>
-        network 1{" "}
-      </DesktopElement>
-      <DesktopElement icon={recycle} iconTitle={"Recycle Bin"}>
-        recycle 1{" "}
-      </DesktopElement>
-
-      <a
-        href="https://www.linkedin.com/in/stefan-ivanus-941455250/"
-        target="_blank"
-        rel="noopener noreferrer">
-        <DesktopElement icon={github} iconTitle={"GitHub"}></DesktopElement>
-      </a>
+      </Window>
     </section>
   );
 }

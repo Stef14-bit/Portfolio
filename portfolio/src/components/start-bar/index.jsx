@@ -5,11 +5,14 @@ import { useState } from "react";
 import StartMenu from "../start-menu";
 import DateTime from "../date-time";
 import astronaut from "../../assets/icons/astronaut.bmp";
-import DesktopElement from "../desktop-element";
+import Window from "../window";
+import Iframe from "react-iframe";
 import mycomputer from "../../assets/icons/mycomputer.ico";
 import mydocuments from "../../assets/icons/mydocuments.ico";
-import mynetwork from "../../assets/icons/mynetwork.ico";
-import recycle from "../../assets/icons/recycle.ico";
+import folder from "../../assets/icons/folder.ico";
+import msn from "../../assets/icons/msn.ico";
+import github from "../../assets/icons/github.png";
+import resume from "../../assets/resume.pdf";
 import internetex from "../../assets/icons/internetex.ico";
 import email from "../../assets/icons/email.ico";
 import morestart from "../../assets/icons/morestart.ico";
@@ -29,18 +32,33 @@ function Start() {
       {open && (
         <StartMenu userImg={astronaut} userName={"Stefan"}>
           <div className={styles.start_items}>
-            <DesktopElement
-              icon={internetex}
-              iconTitle={"Internet"}
-              iconSubtitle={"Go online"}
-            />
-
-            <DesktopElement icon={email} iconTitle={"E-mail"} />
+            <Window icon={internetex} iconTitle={"Internet Explorer"}>
+              <Iframe
+                src="https://www.youtube.com/embed?v=66tfvFeALBQ"
+                frameborder="0"
+                width="100%"
+                height="100%"></Iframe>
+            </Window>
+            <Window icon={email} iconTitle={"Email"}>
+              <h1>Email here</h1>
+            </Window>
             <hr className={styles.divider} />
-            <DesktopElement icon={mydocuments} iconTitle={"My Documents"} />
-            <DesktopElement icon={mycomputer} iconTitle={"My Computer"} />
-            <DesktopElement icon={mynetwork} iconTitle={"My Network"} />
-            <DesktopElement icon={recycle} iconTitle={"Recycle Bin"} />
+            <Window icon={mycomputer} iconTitle={"My Computer"}>
+              <h1>MY computer</h1>
+            </Window>
+            <Window icon={folder} iconTitle={"My Resume"}>
+              <Iframe src={resume} width="100%" height="100%" />
+            </Window>
+            <Window icon={msn} iconTitle={"MSN"}>
+              <h1>insert contact form here!!</h1>
+            </Window>
+            <Window icon={github} iconTitle={"GitHub"}>
+              <Iframe
+                src={"https://github.com/Stef14-bit"}
+                width="100%"
+                height="100%"
+              />
+            </Window>
             <hr className={styles.divider} />
             <br />
             <h4>

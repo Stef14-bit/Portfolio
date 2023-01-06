@@ -8,7 +8,6 @@ import astronaut from "../../assets/icons/astronaut.bmp";
 import Window from "../window";
 import Iframe from "react-iframe";
 import mycomputer from "../../assets/icons/mycomputer.ico";
-import mydocuments from "../../assets/icons/mydocuments.ico";
 import folder from "../../assets/icons/folder.ico";
 import msn from "../../assets/icons/msn.ico";
 import github from "../../assets/icons/github.png";

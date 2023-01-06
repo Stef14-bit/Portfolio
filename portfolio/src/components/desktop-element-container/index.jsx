@@ -8,6 +8,7 @@ import github from "../../assets/icons/github.png";
 import styles from "./styles.module.css";
 import Iframe from "react-iframe";
 import Window from "../window";
+import Contact from "../contact-form";
 
 // need desktop elements container to fix a problem with
 // react-draggable package where if you drag the window out of
@@ -30,7 +31,7 @@ function DesktopContainer() {
         <Iframe src={resume} width="100%" height="100%" />
       </Window>
       <Window icon={msn} iconTitle={"MSN"}>
-        <h1>insert contact form here!!</h1>
+        <Contact />
       </Window>
       <Window icon={github} iconTitle={"GitHub"}>
         <Iframe
@@ -39,6 +40,7 @@ function DesktopContainer() {
           height="100%"
         />
       </Window>
+      <Contact icon={msn} iconTitle={"Contact Me"} />
     </section>
   );
 }

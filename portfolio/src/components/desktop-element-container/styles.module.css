@@ -5,15 +5,17 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: flex-start;
+  align-content: flex-start;
   padding: 10px;
+  padding-bottom: 30px;
 }
 
 .desktop_elements p {
   color: white;
 }
-.desktop_elements img {
+
+/* .desktop_elements img {
   margin: auto;
   display: block;
   height: 55px;
-}
+} */

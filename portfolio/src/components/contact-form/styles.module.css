@@ -1,0 +1,36 @@
+.desktop_icon {
+  background: transparent;
+  border: none;
+  margin: 0.3rem;
+  min-width: 100px;
+}
+
+/* .top_section img {
+  height: 100%;
+  width: auto;
+  float: left;
+} */
+.top_section {
+  background-color: aqua;
+  /* width: 100%; */
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2em;
+}
+
+.top_section * {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.contact_container {
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  height: 35rem;
+  width: 30rem;
+  background-color: brown;
+}

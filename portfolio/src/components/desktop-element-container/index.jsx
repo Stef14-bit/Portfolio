@@ -30,9 +30,7 @@ function DesktopContainer() {
       <Window icon={folder} iconTitle={"My Resume"}>
         <Iframe src={resume} width="100%" height="100%" />
       </Window>
-      <Window icon={msn} iconTitle={"MSN"}>
-        <Contact />
-      </Window>
+
       <Window icon={github} iconTitle={"GitHub"}>
         <Iframe
           src={"https://github.com/Stef14-bit"}

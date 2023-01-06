@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import msnLogo from "../../assets/icons/msnLogo.png";
+import msnIcon from "../../assets/icons/msnIcon.jpg";
 
 function Contact({ icon, iconTitle }) {
   const [formStatus, setFormStatus] = useState("Send");
@@ -33,41 +34,37 @@ function Contact({ icon, iconTitle }) {
           <div className={styles.top_section}>
             <img src={msnLogo} alt="msn logo" />
             <button
-              className={styles.close_btn}
+              className={styles.close_button}
               onClick={() => setOpenForm(false)}>
               X
             </button>
           </div>
-          <h2>Contact Form </h2>
-          <form onSubmit={onSubmit}>
-            <div>
-              <label className={styles.form_label} htmlFor="name">
-                Name
-              </label>
-              <input
-                className={styles.form_input}
-                type="text"
-                id="name"
-                required
-              />
-            </div>
-            <div>
-              <label className={styles.form_label} htmlFor="email">
-                Email
-              </label>
-              <input
-                className={styles.form_input}
-                type="email"
-                id="email"
-                required
-              />
-            </div>
-            <div>
-              <label className={styles.form_label} htmlFor="message">
-                Message
-              </label>
-              <textarea className={styles.form_input} id="message" required />
-            </div>
+
+          <img className={styles.msn_picture} src={msnIcon} alt="msn icon" />
+          <form className={styles.form_body} onSubmit={onSubmit}>
+            <label className={styles.form_label} htmlFor="name">
+              Name
+            </label>
+            <input
+              className={styles.form_input}
+              type="text"
+              id="name"
+              required
+            />
+
+            <label className={styles.form_label} htmlFor="email">
+              E-mail address:
+            </label>
+            <input
+              className={styles.form_input}
+              type="email"
+              id="email"
+              required
+            />
+            <label className={styles.form_label} htmlFor="message">
+              Message
+            </label>
+            <textarea className={styles.form_message} id="message" required />
             <button className={styles.submit_btn} type="submit">
               {formStatus}
             </button>

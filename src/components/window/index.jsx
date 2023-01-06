@@ -15,7 +15,7 @@ function Window({ children, icon, iconTitle }) {
       </button>
       {window && (
         <div className={styles.container}>
-          <Draggable handle=".handle">
+          <Draggable handle=".handle" bounds="parent">
             <div className={styles.window}>
               <div id={styles.top_border} className="handle">
                 <button disabled className={styles.maximize}>
@@ -25,9 +25,9 @@ function Window({ children, icon, iconTitle }) {
                   O
                 </button>
                 <button
-                  onClick={() => setWindow(false)}
+                  onClick={() => setWindow(!window)}
                   className={styles.close_btn}>
-                  x
+                  X
                 </button>
               </div>
               {children}

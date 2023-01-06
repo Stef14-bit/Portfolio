@@ -6,12 +6,10 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-content: flex-start;
-  padding: 10px;
+
   padding-bottom: 30px;
 }
 
 .desktop_elements p {
   color: white;
 }
-
-

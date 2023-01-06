@@ -1,6 +1,7 @@
 #top_border {
   height: 35px;
-  background-color: blue;
+  background-color: #1044be;
+  box-shadow: inset 0px 10px 10px #ffffff77;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -19,7 +20,7 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  border: 3px solid blue;
+  border: 3px solid #1044be;
   border-radius: 10px 10px 0px 0px;
   resize: both;
   overflow: auto;
@@ -36,15 +37,14 @@
   height: 1.6rem;
   width: 1.6rem;
   margin: 5px;
-  border: 1px solid white;
   border-radius: 5px;
-  background-color: blue;
+  background-color: #1044be;
   color: white;
-  box-shadow: inset 0px 0px 5px 1px rgba(255, 255, 255, 0.693);
+  box-shadow: inset 0px 0px 3px 1px rgba(255, 255, 255, 0.693);
 }
 
 .close_btn {
-  background-color: red;
+  background-color: #e5383b;
 }
 .desktop_icon {
   background: transparent;
@@ -57,5 +57,14 @@
   padding: 0.5rem;
 }
 .desktop_icon:hover {
-  background-color: rgba(47, 47, 217, 0.589);
+  background-color: #1d49afaa;
+}
+@media screen and (max-width: 400px) {
+  .window {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-right: 10%;
+  }
 }

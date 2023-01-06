@@ -14,7 +14,7 @@
 }
 
 .start_btn {
-  background-color: #167616;
+  background-color: #1d991d;
   box-shadow: inset 0px 10px 10px #ffffff77;
 
   width: 120px;
@@ -83,4 +83,16 @@
   align-items: center;
   height: 1rem;
   padding: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+  .start {
+    justify-content: center;
+  }
+  .date_time {
+    display: none;
+  }
+  .start_btn {
+    border-radius: 13px;
+  }
 }

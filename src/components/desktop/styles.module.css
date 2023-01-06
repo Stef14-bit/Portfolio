@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100%;
   background-size: cover;
+  overflow: hidden;
 }
 .desktop {
   max-height: 100%;

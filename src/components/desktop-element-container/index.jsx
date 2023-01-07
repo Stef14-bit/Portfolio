@@ -9,6 +9,7 @@ import styles from "./styles.module.css";
 import Iframe from "react-iframe";
 import Window from "../window";
 import Contact from "../contact-form";
+import WindowMobile from "../window-mobile";
 
 // need desktop elements container to fix a problem with
 // react-draggable package where if you drag the window out of
@@ -16,30 +17,56 @@ import Contact from "../contact-form";
 
 function DesktopContainer() {
   return (
-    <section className={styles.desktop_elements}>
-      <Window icon={mydocuments} iconTitle={"My Documents"}>
-        <h1>MY documents</h1>
-      </Window>
+    <>
+      <section className={styles.desktop_elements}>
+        <Window icon={mydocuments} iconTitle={"My Documents"}>
+          <h1>MY documents</h1>
+        </Window>
 
-      <Window icon={mycomputer} iconTitle={"My Computer"}>
-        <h1>MY computer</h1>
-      </Window>
-      <Window icon={recycle} iconTitle={"Recycle Bin"}>
-        <h1>MY recycle bin</h1>
-      </Window>
-      <Window icon={folder} iconTitle={"My Resume"}>
-        <Iframe src={resume} width="100%" height="100%" />
-      </Window>
+        <Window icon={mycomputer} iconTitle={"My Computer"}>
+          <h1>MY computer</h1>
+        </Window>
+        <Window icon={recycle} iconTitle={"Recycle Bin"}>
+          <h1>MY recycle bin</h1>
+        </Window>
+        <Window icon={folder} iconTitle={"My Resume"}>
+          <Iframe src={resume} width="100%" height="100%" />
+        </Window>
 
-      <Window icon={github} iconTitle={"GitHub"}>
-        <Iframe
-          src={"https://github.com/Stef14-bit"}
-          width="100%"
-          height="100%"
-        />
-      </Window>
-      <Contact icon={msn} iconTitle={"Contact Me"} />
-    </section>
+        <Window icon={github} iconTitle={"GitHub"}>
+          <Iframe
+            src={"https://github.com/Stef14-bit"}
+            width="100%"
+            height="100%"
+          />
+        </Window>
+        <Contact icon={msn} iconTitle={"Contact Me"} />
+      </section>
+      <section className={styles.desktop_elements_mobile} Mobile>
+        <WindowMobile icon={mydocuments} iconTitle={"My Documents"}>
+          <h1>MY documents</h1>
+        </WindowMobile>
+
+        <WindowMobile icon={mycomputer} iconTitle={"My Computer"}>
+          <h1>MY computer</h1>
+        </WindowMobile>
+        <WindowMobile icon={recycle} iconTitle={"Recycle Bin"}>
+          <h1>MY recycle bin</h1>
+        </WindowMobile>
+        <WindowMobile icon={folder} iconTitle={"My Resume"}>
+          <Iframe src={resume} width="100%" height="100%" />
+        </WindowMobile>
+
+        <WindowMobile icon={github} iconTitle={"GitHub"}>
+          <Iframe
+            src={"https://github.com/Stef14-bit"}
+            width="100%"
+            height="100%"
+          />
+        </WindowMobile>
+        <Contact icon={msn} iconTitle={"Contact Me"} />
+      </section>
+    </>
   );
 }
 

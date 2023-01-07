@@ -29,6 +29,7 @@
 }
 
 .contact_container {
+  position: absolute;
   left: 25%;
   top: 10%;
   height: 37rem;
@@ -83,5 +84,6 @@
     top: 0;
     left: 0;
     margin-right: 10%;
+    justify-content: space-around;
   }
 }

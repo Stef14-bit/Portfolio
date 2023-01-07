@@ -21,7 +21,7 @@ function DesktopContainer() {
   return (
     <>
       <section className={styles.desktop_elements}>
-        <Window icon={mydocuments} iconTitle={"My Projects"}>
+        <Window icon={mydocuments} iconTitle={"My Documents"}>
           <h1>MY Projects</h1>
         </Window>
 
@@ -54,8 +54,11 @@ function DesktopContainer() {
           />
         </Window>
         <Window icon={folder} iconTitle={"2 Team Project"}>
+          <h2>
+            Second team project using Js React and different node packages
+          </h2>
           <Iframe
-            src={"https://matt0107.github.io/imaginaryCountry/"}
+            src={"https://wild-space-explorer.netlify.app/"}
             width="100%"
             height="100%"
           />
@@ -94,6 +97,26 @@ function DesktopContainer() {
           icon={linkedin}
           iconTitle={"LinkedIn"}
         />
+
+        <WindowMobile icon={folder} iconTitle={"1 Team Project"}>
+          <h2>First team project using HTML CSS and Js</h2>
+
+          <Iframe
+            src={"https://matt0107.github.io/imaginaryCountry/"}
+            width="100%"
+            height="100%"
+          />
+        </WindowMobile>
+        <WindowMobile icon={folder} iconTitle={"2 Team Project"}>
+          <h2>
+            Second team project using Js React and different node packages
+          </h2>
+          <Iframe
+            src={"https://wild-space-explorer.netlify.app/"}
+            width="100%"
+            height="100%"
+          />
+        </WindowMobile>
         <Contact icon={msn} iconTitle={"Contact Me"} />
       </section>
     </>

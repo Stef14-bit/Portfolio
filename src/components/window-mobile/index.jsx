@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./styles.module.css";
 import { useState } from "react";
 
+// need another window component for mobile as the Draggable npm
+// will not work as intended on mobile
 function WindowMobile({ children, icon, iconTitle }) {
   const [WindowMobile, setWindowMobile] = useState(false);
   return (

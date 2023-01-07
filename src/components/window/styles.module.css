@@ -21,10 +21,17 @@
   flex-direction: column;
   background-color: white;
   border: 3px solid #1044be;
+  border-top: none;
   border-radius: 10px 10px 0px 0px;
   resize: both;
   overflow: auto;
 }
+.window > h2 {
+  background-color: red;
+  padding: 2rem 0;
+  text-align: center;
+}
+
 .container {
   position: fixed;
   height: calc(100% - 40px);

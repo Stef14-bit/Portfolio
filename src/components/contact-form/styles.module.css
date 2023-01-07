@@ -4,6 +4,7 @@
   margin: 0.3rem;
   min-width: 100px;
 }
+
 .desktop_icon:hover {
   background-color: rgba(47, 47, 217, 0.589);
 }

@@ -66,6 +66,7 @@ function Start() {
           </div>
         </StartMenu>
       )}
+      <div className={styles.mid_section}></div>
       <div className={styles.date_time}>{<DateTime />}</div>
     </div>
   );

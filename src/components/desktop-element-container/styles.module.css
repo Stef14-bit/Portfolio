@@ -8,14 +8,23 @@
   align-content: flex-start;
   padding-bottom: 30px;
 }
-.desktop_elements_mobile {
-}
 
 .desktop_elements p {
   color: white;
+  font-size: 1rem;
 }
+.desktop_elements a {
+  padding: 1rem;
+  text-decoration: none;
+}
+
 .desktop_elements_mobile p {
-  color: white;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.desktop_elements_mobile {
+  display: none;
 }
 
 @media screen and (max-width: 400px) {

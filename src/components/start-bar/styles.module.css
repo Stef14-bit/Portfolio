@@ -85,6 +85,11 @@
   height: 1rem;
   padding: 1rem;
 }
+.mid_section {
+  position: absolute;
+  width: 80%;
+  height: 35px;
+}
 
 @media screen and (max-width: 400px) {
   .start_btn {

@@ -112,4 +112,10 @@
   .start {
     justify-content: center;
   }
+  .minimized_window {
+    display: none;
+  }
+  .mid_section {
+    display: none;
+  }
 }

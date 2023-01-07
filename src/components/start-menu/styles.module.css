@@ -53,7 +53,7 @@
   color: white;
   margin: 0 10px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .start_menu {
     display: none;
   }

@@ -19,8 +19,9 @@ import morestart from "../../assets/icons/morestart.ico";
 function Start() {
   const [open, setOpen] = useState(false);
 
-  const handleOpen = () => {
+  const handleOpen = (e) => {
     setOpen(!open);
+    e.stopPropagation();
   };
   return (
     <div className={styles.start}>
@@ -29,7 +30,10 @@ function Start() {
         start
       </button>
       {open && (
-        <StartMenu userImg={astronaut} userName={"Stefan"}>
+        <StartMenu
+          closeStart={handleOpen}
+          userImg={astronaut}
+          userName={"Stefan"}>
           <div className={styles.start_items}>
             <Window icon={internetex} iconTitle={"Internet Explorer"}>
               <Iframe
@@ -66,7 +70,10 @@ function Start() {
           </div>
         </StartMenu>
       )}
-      <div className={styles.mid_section}></div>
+      <div className={styles.mid_section}>
+        <p>SKILLS:</p>
+        {window && <div className={styles.minimized_window}>window</div>}
+      </div>
       <div className={styles.date_time}>{<DateTime />}</div>
     </div>
   );

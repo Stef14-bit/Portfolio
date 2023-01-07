@@ -89,8 +89,22 @@
   position: absolute;
   width: 80%;
   height: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10rem;
 }
-
+.mid_section p {
+  color: white;
+  font-weight: bold;
+}
+.minimized_window {
+  height: 80%;
+  max-width: 10%;
+  z-index: 5;
+  border: 2px solid black;
+  background-color: brown;
+}
 @media screen and (max-width: 500px) {
   .start_btn {
     display: none;

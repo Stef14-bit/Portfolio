@@ -1,4 +1,15 @@
+.overlay {
+  background-color: rgba(0, 255, 51, 0.472);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .start_menu {
+  position: fixed;
+  z-index: 5;
   width: 27rem;
   height: 35rem;
   background-color: white;
@@ -45,10 +56,11 @@
   border: none;
   background: none;
 }
-.bottom_items img {
+.log_button {
   height: 2rem;
   width: 2rem;
 }
+
 .bottom_items p {
   color: white;
   margin: 0 10px;

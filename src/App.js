@@ -1,7 +1,6 @@
 import "./App.css";
 import Desktop from "./components/desktop";
 import DesktopContainer from "./components/desktop-element-container";
-import ShutDown from "./components/shutDown-error";
 import Start from "./components/start-bar";
 
 function App() {

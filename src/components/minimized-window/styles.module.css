@@ -1,0 +1,21 @@
+.min_window {
+  position: absolute;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.428);
+  height: 90%;
+  box-shadow: inset 0px 0px 3px 0px rgba(181, 181, 181, 0.545);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.min_window > button {
+  font-weight: bold;
+  border: none;
+  background: transparent;
+}
+.min_window > p {
+  font-weight: bold;
+  color: white;
+}

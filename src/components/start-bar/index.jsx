@@ -15,6 +15,7 @@ import resume from "../../assets/resume.pdf";
 import internetex from "../../assets/icons/internetex.ico";
 import email from "../../assets/icons/email.ico";
 import morestart from "../../assets/icons/morestart.ico";
+import MinWindow from "../minimized-window";
 
 function Start() {
   const [open, setOpen] = useState(false);
@@ -70,8 +71,7 @@ function Start() {
         </StartMenu>
       )}
       <div className={styles.mid_section}>
-        <p>SKILLS:</p>
-        {window && <div className={styles.minimized_window}>window</div>}
+        <MinWindow />
       </div>
       <div className={styles.date_time}>{<DateTime />}</div>
     </div>

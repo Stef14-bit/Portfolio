@@ -6,9 +6,18 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
-
+.window_title > img {
+  height: 20px;
+  width: auto;
+  margin-left: 5px;
+  display: inline;
+  vertical-align: middle;
+}
+.window_title > p {
+  display: inline;
+}
 .window {
   z-index: 1;
   height: 25rem;

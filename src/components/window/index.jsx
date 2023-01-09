@@ -18,17 +18,23 @@ function Window({ children, icon, iconTitle }) {
           <Draggable handle=".handle" bounds="parent">
             <div className={styles.window}>
               <div id={styles.top_border} className="handle">
-                <button disabled className={styles.maximize}>
-                  _
-                </button>
-                <button disabled className={styles.minimize}>
-                  O
-                </button>
-                <button
-                  onClick={() => setWindow(!window)}
-                  className={styles.close_btn}>
-                  X
-                </button>
+                <div className={styles.window_title}>
+                  <img src={icon} alt={iconTitle} />
+                  <p> {iconTitle}</p>
+                </div>
+                <div>
+                  <button disabled className={styles.maximize}>
+                    _
+                  </button>
+                  <button disabled className={styles.minimize}>
+                    O
+                  </button>
+                  <button
+                    onClick={() => setWindow(!window)}
+                    className={styles.close_btn}>
+                    X
+                  </button>
+                </div>
               </div>
               {children}
             </div>

@@ -19,9 +19,8 @@ import morestart from "../../assets/icons/morestart.ico";
 function Start() {
   const [open, setOpen] = useState(false);
 
-  const handleOpen = (e) => {
+  const handleOpen = () => {
     setOpen(!open);
-    e.stopPropagation();
   };
   return (
     <div className={styles.start}>

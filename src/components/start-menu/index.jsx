@@ -12,7 +12,7 @@ function StartMenu({ userImg, userName, children, closeStart }) {
 
   return (
     <div className={styles.overlay} onClick={closeStart}>
-      <div className={styles.start_menu}>
+      <div className={styles.start_menu} onClick={(e) => e.stopPropagation()}>
         <div className={styles.top_items}>
           <img src={userImg} alt="user img" />
           <h2>{userName}</h2>

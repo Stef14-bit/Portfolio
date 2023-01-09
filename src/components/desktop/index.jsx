@@ -7,7 +7,10 @@ function Desktop() {
   return (
     <div className={styles.desktop}>
       <img className={styles.background} src={bliss} alt="background" />
-      <Start />
+      <div>
+        {" "}
+        <Start />
+      </div>
     </div>
   );
 }

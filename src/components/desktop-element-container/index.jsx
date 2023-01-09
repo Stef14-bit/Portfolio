@@ -63,6 +63,9 @@ function DesktopContainer() {
             height="100%"
           />
         </Window>
+        <Window icon={folder} iconTitle={"3 Team Project"}>
+          <h2>Coming soon ... </h2>
+        </Window>
 
         <Contact icon={msn} iconTitle={"Contact Me"} />
       </section>

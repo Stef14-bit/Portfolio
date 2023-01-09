@@ -3,7 +3,6 @@
   margin: 0.3rem;
   min-width: 100px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .desktop_link:hover {

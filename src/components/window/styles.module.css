@@ -68,6 +68,7 @@
   border: none;
   margin: 0.3rem;
   min-width: 100px;
+  cursor: pointer;
 }
 .desktop_icon p {
   font-size: larger;

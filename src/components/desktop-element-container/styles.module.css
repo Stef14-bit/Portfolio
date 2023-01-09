@@ -17,6 +17,9 @@
   padding: 1rem;
   text-decoration: none;
 }
+.desktop_elements > div {
+  justify-content: center;
+}
 
 .desktop_elements_mobile p {
   color: #000;

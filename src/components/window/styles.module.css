@@ -20,8 +20,8 @@
 }
 .window {
   z-index: 1;
-  height: 25rem;
-  width: 35rem;
+  height: 35rem;
+  width: 65rem;
   position: absolute;
   left: 20%;
   max-width: 99vw;

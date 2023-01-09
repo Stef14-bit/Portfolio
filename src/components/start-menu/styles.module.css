@@ -32,14 +32,13 @@
   align-items: center;
   margin-left: 10px;
 }
-.top_items h2 {
+.top_items > h2 {
   color: white;
   margin-left: 10px;
 }
 
 .content {
   background-color: rgb(105, 145, 145);
-
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
   height: 80%;
@@ -60,7 +59,7 @@
   width: 2rem;
 }
 
-.bottom_items p {
+.bottom_items > p {
   color: white;
   margin: 0 10px;
 }

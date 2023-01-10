@@ -35,12 +35,6 @@
   resize: both;
   overflow: auto;
 }
-.window > h2 {
-  color: rgb(66, 66, 66);
-  background-color: RGB(212, 208, 200);
-  padding: 2rem 0;
-  text-align: center;
-}
 
 .container {
   position: fixed;
@@ -62,6 +56,27 @@
 
 .close_btn {
   background-color: #e5383b;
+}
+.top_section {
+  background-color: #79797977;
+  width: 100%;
+  height: 10rem;
+}
+.top_section > input {
+  width: 90%;
+  padding: 0.2rem;
+  margin: 1rem;
+}
+.top_section > span {
+  word-spacing: 2rem;
+  cursor: default;
+}
+.top_section > p {
+  text-align: center;
+  color: #1044be;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  cursor: default;
 }
 .desktop_icon {
   background: transparent;

@@ -3,7 +3,14 @@ import styles from "./styles.module.css";
 import Draggable from "react-draggable";
 import { useState } from "react";
 
-function Window({ children, icon, iconTitle }) {
+function Window({
+  children,
+  icon,
+  iconTitle,
+  pageDescription,
+  linkName,
+  externalLink,
+}) {
   const [window, setWindow] = useState(false);
   return (
     <>
@@ -36,6 +43,17 @@ function Window({ children, icon, iconTitle }) {
                   </button>
                 </div>
               </div>
+              <div className={styles.top_section}>
+                <span> File Edit View Favorites Tools Help</span>
+                <hr /> <p>{pageDescription}</p>
+                _Adress
+                <input type="text" value={`Desktop / ${iconTitle}`} />
+                <a href={externalLink} target="_blank" rel="noreferrer">
+                  <button>{linkName}</button>
+                </a>
+                <hr />{" "}
+              </div>
+
               {children}
             </div>
           </Draggable>

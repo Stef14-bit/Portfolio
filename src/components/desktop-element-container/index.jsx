@@ -44,19 +44,26 @@ function DesktopContainer() {
           icon={linkedin}
           iconTitle={"LinkedIn"}
         />
-        <Window icon={folder} iconTitle={"1 Team Project"}>
-          <h2>First team project using HTML CSS and Js</h2>
-
+        <Window
+          icon={folder}
+          iconTitle={"1 Team Project"}
+          pageDescription={"First team project using HTML CSS and Js"}
+          externalLink={"https://matt0107.github.io/imaginaryCountry/"}
+          linkName={"Link here"}>
           <Iframe
             src={"https://matt0107.github.io/imaginaryCountry/"}
             width="100%"
             height="100%"
           />
         </Window>
-        <Window icon={folder} iconTitle={"2 Team Project"}>
-          <h2>
-            Second team project using Js React and different node packages
-          </h2>
+        <Window
+          icon={folder}
+          iconTitle={"2 Team Project"}
+          pageDescription={
+            "Second team project using Js React and different node packages"
+          }
+          externalLink={"https://wild-space-explorer.netlify.app/"}
+          linkName={"Link Here"}>
           <Iframe
             src={"https://wild-space-explorer.netlify.app/"}
             width="100%"

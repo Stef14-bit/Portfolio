@@ -1,24 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./styles.module.css";
 import msnLogo from "../../assets/icons/msnLogo.png";
 import msnIcon from "../../assets/icons/msnIcon.jpg";
+import emailjs from "@emailjs/browser";
 
 function Contact({ icon, iconTitle }) {
+  const form = useRef();
   const [formStatus, setFormStatus] = useState("Send");
   const [openForm, setOpenForm] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   function onSubmit(e) {
     e.preventDefault();
     setFormStatus("Submitting...");
+    setName("");
+    setEmail("");
+    setMessage("");
 
-    const { name, email, message } = e.target.elements;
-
-    let conFom = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    console.log(conFom);
+    emailjs
+      .sendForm(
+        "service_pdcfm1q",
+        "template_s3oddtb",
+        form.current,
+        "oima6GjDFnvBEc6bQ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          if (result.text === "OK") setFormStatus("Message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   }
   return (
     <>
@@ -41,14 +57,16 @@ function Contact({ icon, iconTitle }) {
           </div>
 
           <img className={styles.msn_picture} src={msnIcon} alt="msn icon" />
-          <form className={styles.form_body} onSubmit={onSubmit}>
+          <form ref={form} className={styles.form_body} onSubmit={onSubmit}>
             <label className={styles.form_label} htmlFor="name">
               Name
             </label>
             <input
               className={styles.form_input}
               type="text"
-              id="name"
+              name="name"
+              onChange={(e) => setName(e.target.value)}
+              value={name}
               required
             />
 
@@ -58,13 +76,21 @@ function Contact({ icon, iconTitle }) {
             <input
               className={styles.form_input}
               type="email"
-              id="email"
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
               required
             />
             <label className={styles.form_label} htmlFor="message">
               Message
             </label>
-            <textarea className={styles.form_message} id="message" required />
+            <textarea
+              className={styles.form_message}
+              name="message"
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
+              required
+            />
             <button className={styles.submit_btn} type="submit">
               {formStatus}
             </button>

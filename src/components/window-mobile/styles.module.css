@@ -57,3 +57,7 @@
 .desktop_icon:hover {
   background-color: #1d49afaa;
 }
+.top_section {
+  background-color: #79797977;
+  text-align: center;
+}

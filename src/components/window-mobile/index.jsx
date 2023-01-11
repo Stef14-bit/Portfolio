@@ -4,7 +4,7 @@ import { useState } from "react";
 
 // need another window component for mobile as the Draggable npm
 // will not work as intended on mobile
-function WindowMobile({ children, icon, iconTitle }) {
+function WindowMobile({ children, icon, iconTitle, pageDescription }) {
   const [WindowMobile, setWindowMobile] = useState(false);
   return (
     <>
@@ -29,6 +29,10 @@ function WindowMobile({ children, icon, iconTitle }) {
                 className={styles.close_btn}>
                 X
               </button>
+            </div>{" "}
+            <div className={styles.top_section}>
+              <p>{pageDescription}</p>
+              <hr />{" "}
             </div>
             {children}
           </div>

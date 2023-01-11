@@ -101,16 +101,24 @@ function DesktopContainer() {
           ---the section below will toggle on as the one above will toggle off when screen < 400px*/}
 
       <section className={styles.desktop_elements_mobile} Mobile>
-        <WindowMobile icon={mydocuments} iconTitle={"My projects"}>
-          <h1>MY documents</h1>
-        </WindowMobile>
+        <WindowMobile
+          icon={mydocuments}
+          iconTitle={"My Documents"}
+          pageDescription={"No content yet..."}></WindowMobile>
 
         <WindowMobile icon={mycomputer} iconTitle={"My Computer"}>
-          <h1>MY computer</h1>
+          <div className={styles.skills_mobile}>
+            <h2> My skills :</h2>
+
+            {skills.map((e) => (
+              <Skills icon={e.icon} title={e.title} />
+            ))}
+          </div>{" "}
         </WindowMobile>
-        <WindowMobile icon={recycle} iconTitle={"Recycle Bin"}>
-          <h1>MY recycle bin</h1>
-        </WindowMobile>
+        <WindowMobile
+          icon={recycle}
+          iconTitle={"Recycle Bin"}
+          pageDescription={"No content yet..."}></WindowMobile>
         <WindowMobile icon={folder} iconTitle={"My Resume"}>
           <Iframe src={resume} width="100%" height="100%" />
         </WindowMobile>
@@ -126,24 +134,30 @@ function DesktopContainer() {
           iconTitle={"LinkedIn"}
         />
 
-        <WindowMobile icon={folder} iconTitle={"1 Team Project"}>
-          <h2>First team project using HTML CSS and Js</h2>
-
+        <WindowMobile
+          icon={folder}
+          iconTitle={"1 Team Project"}
+          pageDescription={"First team project using HTML CSS and Js"}>
           <Iframe
             src={"https://matt0107.github.io/imaginaryCountry/"}
             width="100%"
             height="100%"
           />
         </WindowMobile>
-        <WindowMobile icon={folder} iconTitle={"2 Team Project"}>
-          <h2>
-            Second team project using Js React and different node packages
-          </h2>
+        <WindowMobile
+          icon={folder}
+          iconTitle={"2 Team Project"}
+          pageDescription={
+            "Second team project using Js React and different node packages"
+          }>
           <Iframe
             src={"https://wild-space-explorer.netlify.app/"}
             width="100%"
             height="100%"
           />
+        </WindowMobile>
+        <WindowMobile icon={folder} iconTitle={"3 Team Project"}>
+          <h2>Coming soon ... </h2>
         </WindowMobile>
         <Contact icon={msn} iconTitle={"Contact Me"} />
       </section>

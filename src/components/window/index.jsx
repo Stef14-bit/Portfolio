@@ -34,7 +34,7 @@ function Window({
                     _
                   </button>
                   <button disabled className={styles.minimize}>
-                    O
+                    <div className={styles.max_icon}></div>
                   </button>
                   <button
                     onClick={() => setWindow(!window)}

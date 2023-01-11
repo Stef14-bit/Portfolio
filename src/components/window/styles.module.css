@@ -53,6 +53,12 @@
   color: white;
   box-shadow: inset 0px 0px 3px 1px rgba(255, 255, 255, 0.693);
 }
+.max_icon {
+  height: 50%;
+  width: 50%;
+  border: 2px solid white;
+  margin-left: 5px;
+}
 
 .close_btn {
   background-color: #e5383b;
@@ -68,7 +74,7 @@
   margin: 1rem;
 }
 .top_section > span {
-  word-spacing: 2rem;
+  word-spacing: 1rem;
   cursor: default;
 }
 .top_section > p {

@@ -12,6 +12,9 @@ import Window from "../window";
 import Contact from "../contact-form";
 import WindowMobile from "../window-mobile";
 import DesktopLink from "../desktop-external-link";
+import WindowAside from "../window-aside";
+import Skills from "../skills";
+import skills from "../../data/skills";
 
 // need desktop elements container to fix a problem with
 // react-draggable package where if you drag the window out of
@@ -21,15 +24,30 @@ function DesktopContainer() {
   return (
     <>
       <section className={styles.desktop_elements}>
-        <Window icon={mydocuments} iconTitle={"My Documents"}>
-          <h1>MY Projects</h1>
+        <Window
+          icon={mydocuments}
+          iconTitle={"My Documents"}
+          pageDescription={"No content yet..."}>
+          <WindowAside location={"My Documents"} />
         </Window>
 
         <Window icon={mycomputer} iconTitle={"My Computer"}>
-          <h1>MY computer</h1>
+          <div className={styles.window_content}>
+            <WindowAside location={"My Computer"} />
+            <div className={styles.skill_area}>
+              <h2> My skills :</h2>
+
+              {skills.map((e) => (
+                <Skills icon={e.icon} title={e.title} />
+              ))}
+            </div>{" "}
+          </div>{" "}
         </Window>
-        <Window icon={recycle} iconTitle={"Recycle Bin"}>
-          <h1>MY recycle bin</h1>
+        <Window
+          icon={recycle}
+          iconTitle={"Recycle Bin"}
+          pageDescription={"No content yet..."}>
+          <WindowAside location={"Recycle Bin"} />
         </Window>
         <Window icon={folder} iconTitle={"My Resume"}>
           <Iframe src={resume} width="100%" height="100%" />

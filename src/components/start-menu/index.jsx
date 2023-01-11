@@ -19,10 +19,11 @@ function StartMenu({ userImg, userName, children, closeStart }) {
         </div>
         <section className={styles.content}>{children}</section>
         <div className={styles.bottom_items}>
-          <button>
+          <button onClick={handleShutDown}>
             <img src={logoff} alt="log off" className={styles.log_button} />
           </button>
           <p>Log Off</p>
+          {shutDown && <ShutDown close={handleShutDown} />}
           <button onClick={handleShutDown}>
             <img src={turnoff} alt="turn off" className={styles.log_button} />
           </button>

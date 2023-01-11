@@ -1,0 +1,18 @@
+.skill {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill:hover {
+  background-color: #1044be95;
+}
+.skill img {
+  height: 48px;
+  width: 48px;
+}
+#text {
+  color: #1044be;
+}

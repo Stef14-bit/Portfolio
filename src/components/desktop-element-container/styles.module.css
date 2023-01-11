@@ -8,6 +8,29 @@
   align-content: flex-start;
   padding-bottom: 30px;
 }
+.window_content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.skill_area {
+  width: 80%;
+  height: 100%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.skill_area h2 {
+  color: #1044be95;
+  font-size: 2rem;
+  text-decoration: underline;
+  font-style: italic;
+}
 
 .desktop_elements p {
   color: white;

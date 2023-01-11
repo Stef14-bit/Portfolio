@@ -16,7 +16,6 @@ import resume from "../../assets/resume.pdf";
 import internetex from "../../assets/icons/internetex.ico";
 import email from "../../assets/icons/email.ico";
 import morestart from "../../assets/icons/morestart.ico";
-import MinWindow from "../minimized-window";
 import DesktopLink from "../desktop-external-link";
 import Contact from "../contact-form";
 
@@ -104,9 +103,7 @@ function Start() {
           </div>
         </StartMenu>
       )}
-      <div className={styles.mid_section}>
-        <MinWindow />
-      </div>
+      <div className={styles.mid_section}></div>
       <div className={styles.date_time}>{<DateTime />}</div>
     </div>
   );

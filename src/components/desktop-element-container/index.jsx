@@ -46,8 +46,30 @@ function DesktopContainer() {
         <Window
           icon={recycle}
           iconTitle={"Recycle Bin"}
-          pageDescription={"No content yet..."}>
-          <WindowAside location={"Recycle Bin"} />
+          pageDescription={
+            'The "trash" section is some notable things i did during my learning.So basically small projects exercises and some teaching materials'
+          }>
+          <div className={styles.window_content}>
+            <WindowAside location={"Recycle Bin"} />
+            <div className={styles.skill_area}>
+              {" "}
+              <DesktopLink
+                href={"https://github.com/Stef14-bit/express-mysql-workshop"}
+                icon={folder}
+                iconTitle={"Mysql workshop"}
+              />
+              <DesktopLink
+                href={"https://github.com/Stef14-bit/react-workshop-e-comerce"}
+                icon={folder}
+                iconTitle={"e-comerce workshop"}
+              />
+              <DesktopLink
+                href={"https://github.com/Stef14-bit/pokedex-react"}
+                icon={folder}
+                iconTitle={"react pokedex"}
+              />
+            </div>
+          </div>
         </Window>
         <Window icon={folder} iconTitle={"My Resume"}>
           <Iframe src={resume} width="100%" height="100%" />
@@ -118,7 +140,25 @@ function DesktopContainer() {
         <WindowMobile
           icon={recycle}
           iconTitle={"Recycle Bin"}
-          pageDescription={"No content yet..."}></WindowMobile>
+          pageDescription={
+            'The "trash" section is most of the things i did during my learning.So basically small projects exercises and some teaching materials'
+          }>
+          <DesktopLink
+            href={"https://github.com/Stef14-bit/express-mysql-workshop"}
+            icon={folder}
+            iconTitle={"Mysql workshop"}
+          />
+          <DesktopLink
+            href={"https://github.com/Stef14-bit/react-workshop-e-comerce"}
+            icon={folder}
+            iconTitle={"e-comerce workshop"}
+          />
+          <DesktopLink
+            href={"https://github.com/Stef14-bit/pokedex-react"}
+            icon={folder}
+            iconTitle={"react pokedex"}
+          />
+        </WindowMobile>
         <WindowMobile icon={folder} iconTitle={"My Resume"}>
           <Iframe src={resume} width="100%" height="100%" />
         </WindowMobile>

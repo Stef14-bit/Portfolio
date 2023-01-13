@@ -18,18 +18,24 @@
 .skill_area {
   width: 80%;
   height: 100%;
-  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  justify-content: center;
+  align-items: center;
 }
 .skill_area h2 {
   color: #1044be95;
   font-size: 2rem;
   text-decoration: underline;
   font-style: italic;
+}
+.skill_area a > p {
+  text-decoration: none;
+  text-align: center;
+  color: #1044be95;
 }
 
 .desktop_elements p {

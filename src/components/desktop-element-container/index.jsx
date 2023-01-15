@@ -15,6 +15,7 @@ import DesktopLink from "../desktop-external-link";
 import WindowAside from "../window-aside";
 import Skills from "../skills";
 import skills from "../../data/skills";
+import schoolMaterial from "../../data/recycleBin";
 
 // need desktop elements container to fix a problem with
 // react-draggable package where if you drag the window out of
@@ -52,22 +53,9 @@ function DesktopContainer() {
           <div className={styles.window_content}>
             <WindowAside location={"Recycle Bin"} />
             <div className={styles.skill_area}>
-              {" "}
-              <DesktopLink
-                href={"https://github.com/Stef14-bit/express-mysql-workshop"}
-                icon={folder}
-                iconTitle={"Mysql workshop"}
-              />
-              <DesktopLink
-                href={"https://github.com/Stef14-bit/react-workshop-e-comerce"}
-                icon={folder}
-                iconTitle={"e-comerce workshop"}
-              />
-              <DesktopLink
-                href={"https://github.com/Stef14-bit/pokedex-react"}
-                icon={folder}
-                iconTitle={"react pokedex"}
-              />
+              {schoolMaterial.map((e) => (
+                <DesktopLink href={e.url} icon={folder} iconTitle={e.title} />
+              ))}
             </div>
           </div>
         </Window>

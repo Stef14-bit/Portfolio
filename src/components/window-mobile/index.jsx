@@ -32,7 +32,6 @@ function WindowMobile({ children, icon, iconTitle, pageDescription }) {
             </div>{" "}
             <div className={styles.top_section}>
               <p>{pageDescription}</p>
-              <hr />{" "}
             </div>
             {children}
           </div>

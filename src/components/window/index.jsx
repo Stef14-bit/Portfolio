@@ -51,7 +51,6 @@ function Window({
                 <a href={externalLink} target="_blank" rel="noreferrer">
                   <button>{linkName}</button>
                 </a>
-                <hr />{" "}
               </div>
 
               {children}

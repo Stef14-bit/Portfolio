@@ -19,7 +19,6 @@
   background-color: white;
   border: 3px solid #1044be;
   border-radius: 10px 10px 0px 0px;
-  overflow: auto;
 }
 .container {
   position: fixed;
@@ -32,6 +31,8 @@
 .maximize,
 .minimize,
 .close_btn {
+  position: relative;
+  z-index: 7;
   height: 1.6rem;
   width: 1.6rem;
   margin: 5px;

@@ -3,7 +3,9 @@ import mydocuments from "../../assets/icons/mydocuments.ico";
 import msn from "../../assets/icons/msn.ico";
 import recycle from "../../assets/icons/recycle.ico";
 import resume from "../../assets/resume.pdf";
+import aboutPdf from "../../assets/aboutPdf.pdf";
 import folder from "../../assets/icons/folder.ico";
+import about from "../../assets/icons/about.ico";
 import github from "../../assets/icons/github.png";
 import linkedin from "../../assets/icons/linkedin.png";
 import styles from "./styles.module.css";
@@ -103,6 +105,9 @@ function DesktopContainer() {
         </Window>
 
         <Contact icon={msn} iconTitle={"Contact Me"} />
+        <Window icon={about} iconTitle={"About"}>
+          <Iframe src={aboutPdf} width="100%" height="100%" />
+        </Window>
       </section>
 
       {/* need a second section for mobile as the draggable will not function as intended
@@ -131,21 +136,12 @@ function DesktopContainer() {
           pageDescription={
             'The "trash" section is most of the things i did during my learning.So basically small projects exercises and some teaching materials'
           }>
-          <DesktopLink
-            href={"https://github.com/Stef14-bit/express-mysql-workshop"}
-            icon={folder}
-            iconTitle={"Mysql workshop"}
-          />
-          <DesktopLink
-            href={"https://github.com/Stef14-bit/react-workshop-e-comerce"}
-            icon={folder}
-            iconTitle={"e-comerce workshop"}
-          />
-          <DesktopLink
-            href={"https://github.com/Stef14-bit/pokedex-react"}
-            icon={folder}
-            iconTitle={"react pokedex"}
-          />
+          <div className={styles.mobile_recycle}>
+            {" "}
+            {schoolMaterial.map((e) => (
+              <DesktopLink href={e.url} icon={folder} iconTitle={e.title} />
+            ))}
+          </div>
         </WindowMobile>
         <WindowMobile icon={folder} iconTitle={"My Resume"}>
           <Iframe src={resume} width="100%" height="100%" />
@@ -188,6 +184,9 @@ function DesktopContainer() {
           <h2>Coming soon ... </h2>
         </WindowMobile>
         <Contact icon={msn} iconTitle={"Contact Me"} />
+        <WindowMobile icon={about} iconTitle={"About"}>
+          <Iframe src={aboutPdf} width="100%" height="100%" />
+        </WindowMobile>
       </section>
     </>
   );

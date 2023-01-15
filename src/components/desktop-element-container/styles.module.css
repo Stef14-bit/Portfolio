@@ -59,6 +59,26 @@
   display: none;
 }
 
+.mobile_recycle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.mobile_recycle a {
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobile_recycle img {
+  width: 48px;
+  height: 48px;
+}
 @media screen and (max-width: 500px) {
   .desktop_elements {
     display: none;

@@ -1,4 +1,6 @@
 #top_border {
+  position: sticky;
+  top: 0px;
   height: 35px;
   background-color: #1044be;
   box-shadow: inset 0px 10px 10px #ffffff77;
@@ -35,6 +37,13 @@
   resize: both;
   overflow: auto;
 }
+.window::-webkit-scrollbar {
+  display: none;
+}
+.window {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 .container {
   position: fixed;
@@ -64,7 +73,9 @@
   background-color: #e5383b;
 }
 .top_section {
-  background-color: #79797977;
+  position: sticky;
+  top: 35px;
+  background-color: #d5d5d5;
   width: 100%;
   height: 10rem;
 }

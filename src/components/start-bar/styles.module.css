@@ -13,6 +13,15 @@
   justify-content: space-between;
   z-index: 5;
 }
+.skill_area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skill_area img {
+  margin: 2rem;
+}
 
 .start_btn {
   background-color: #1d991d;

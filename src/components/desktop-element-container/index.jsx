@@ -185,7 +185,7 @@ function DesktopContainer() {
         </WindowMobile>
         <Contact icon={msn} iconTitle={"Contact Me"} />
         <WindowMobile icon={about} iconTitle={"About"}>
-          <Iframe src={aboutPdf} width="100%" height="100%" />
+          <iframe src={aboutPdf} width="100%" height="100%" title="about" />
         </WindowMobile>
       </section>
     </>

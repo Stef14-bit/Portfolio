@@ -18,6 +18,8 @@ import email from "../../assets/icons/email.ico";
 import morestart from "../../assets/icons/morestart.ico";
 import DesktopLink from "../desktop-external-link";
 import Contact from "../contact-form";
+import skills from "../../data/skills";
+import Skills from "../skills";
 
 function Start() {
   const [open, setOpen] = useState(false);
@@ -38,11 +40,7 @@ function Start() {
           userName={"Stefan"}>
           <div className={styles.start_items}>
             <WindowMobile icon={internetex} iconTitle={"Internet"}>
-              <Iframe
-                src="https://www.youtube.com/embed?v=66tfvFeALBQ"
-                frameborder="0"
-                width="100%"
-                height="100%"></Iframe>
+              <h2>No internet here, check your connection!</h2>
             </WindowMobile>
 
             <WindowMobile icon={email} iconTitle={"Email"}>
@@ -50,7 +48,12 @@ function Start() {
             </WindowMobile>
             <hr className={styles.divider} />
             <WindowMobile icon={mycomputer} iconTitle={"My Computer"}>
-              <h1>MY computer</h1>
+              <div className={styles.skill_area}>
+                <h2> My skills :</h2>
+                {skills.map((e) => (
+                  <Skills icon={e.icon} title={e.title} />
+                ))}
+              </div>{" "}
             </WindowMobile>
             <WindowMobile icon={folder} iconTitle={"My Resume"}>
               <Iframe src={resume} width="100%" height="100%" />

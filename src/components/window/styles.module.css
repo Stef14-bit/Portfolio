@@ -22,10 +22,10 @@
 }
 .window {
   z-index: 1;
-  height: 35rem;
-  width: 65rem;
+  height: 55rem;
+  width: 100rem;
   position: absolute;
-  left: 20%;
+  left: 10%;
   max-width: 99vw;
   max-height: 95vh;
   display: flex;

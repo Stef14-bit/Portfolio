@@ -62,8 +62,18 @@
 .form_message {
   width: 20rem;
   height: 5rem;
+  overflow: scroll;
+  resize: none;
 }
-.form_label {
+
+.form_message::-webkit-scrollbar {
+  display: none;
+}
+.form_message {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+form_message .form_label {
   color: #003566;
 }
 

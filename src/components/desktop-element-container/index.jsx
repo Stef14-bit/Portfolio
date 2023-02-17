@@ -100,8 +100,27 @@ function DesktopContainer() {
             height="100%"
           />
         </Window>
-        <Window icon={folder} iconTitle={"3 Team Project"}>
-          <h2>Coming soon ... </h2>
+        <Window
+          icon={folder}
+          iconTitle={"3 Team Project"}
+          pageDescription={
+            "Work in progress!!! third team project at the moment optimized only for mobile, Car rental app with a Supabase backend more info to come"
+          }
+          externalLink={"https://car-rentalapp.vercel.app/"}>
+          {" "}
+          <Iframe
+            src={"https://car-rentalapp.vercel.app/"}
+            width="100%"
+            height="100%"
+          />
+        </Window>
+        <Window
+          icon={folder}
+          iconTitle={"4 Personal Project"}
+          pageDescription={"Coming soon"}
+          externalLink={"#"}>
+          {" "}
+          <h2>Coming Soon...</h2>
         </Window>
 
         <Contact icon={msn} iconTitle={"Contact Me"} />
@@ -180,7 +199,25 @@ function DesktopContainer() {
             height="100%"
           />
         </WindowMobile>
-        <WindowMobile icon={folder} iconTitle={"3 Team Project"}>
+        <WindowMobile
+          icon={folder}
+          iconTitle={"3 Team Project"}
+          pageDescription={
+            "Work in progress!!! third team project at the moment optimized only for mobile, Car rental app with a Supabase backend more info to come"
+          }>
+          <Iframe
+            src={"https://car-rentalapp.vercel.app/"}
+            width="100%"
+            height="100%"
+          />
+        </WindowMobile>
+        <WindowMobile
+          icon={folder}
+          iconTitle={"4 Personal Project"}
+          pageDescription={"Coming Soon"}>
+          <h2>Coming Soon ...</h2>
+        </WindowMobile>
+        <WindowMobile icon={folder} iconTitle={"4 Team Project"}>
           <h2>Coming soon ... </h2>
         </WindowMobile>
         <Contact icon={msn} iconTitle={"Contact Me"} />

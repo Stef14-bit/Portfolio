@@ -18,6 +18,7 @@ import WindowAside from "../window-aside";
 import Skills from "../skills";
 import skills from "../../data/skills";
 import schoolMaterial from "../../data/recycleBin";
+import projects from "../../data/projects";
 
 // need desktop elements container to fix a problem with
 // react-draggable package where if you drag the window out of
@@ -74,59 +75,15 @@ function DesktopContainer() {
           icon={linkedin}
           iconTitle={"LinkedIn"}
         />
-        <Window
-          icon={folder}
-          iconTitle={"1 Team Project"}
-          pageDescription={"First team project using HTML CSS and Js"}
-          externalLink={"https://matt0107.github.io/imaginaryCountry/"}
-          linkName={"Link here"}>
-          <Iframe
-            src={"https://matt0107.github.io/imaginaryCountry/"}
-            width="100%"
-            height="100%"
-          />
-        </Window>
-        <Window
-          icon={folder}
-          iconTitle={"2 Team Project"}
-          pageDescription={
-            "Second team project using Js React and different node packages"
-          }
-          externalLink={"https://wild-space-explorer.netlify.app/"}
-          linkName={"Link Here"}>
-          <Iframe
-            src={"https://wild-space-explorer.netlify.app/"}
-            width="100%"
-            height="100%"
-          />
-        </Window>
-        <Window
-          icon={folder}
-          iconTitle={"3 Team Project"}
-          pageDescription={
-            "Work in progress!!! third team project at the moment optimized only for mobile, Car rental app with a Supabase backend more info to come"
-          }
-          externalLink={"https://car-rentalapp.vercel.app/"}>
-          {" "}
-          <Iframe
-            src={"https://car-rentalapp.vercel.app/"}
-            width="100%"
-            height="100%"
-          />
-        </Window>
-        <Window
-          icon={folder}
-          iconTitle={"4 Personal Project"}
-          pageDescription={"Coming soon"}
-          externalLink={"#"}>
-          {" "}
-          <h2>Coming Soon...</h2>
-        </Window>
-
-        <Contact icon={msn} iconTitle={"Contact Me"} />
-        <Window icon={about} iconTitle={"About"}>
-          <Iframe src={aboutPdf} width="100%" height="100%" />
-        </Window>
+        {projects.map((e) => (
+          <Window
+            icon={folder}
+            iconTitle={e.iconTitle}
+            pageDescription={e.pageDescription}
+            externalLink={e.externalLink}>
+            <Iframe src={e.externalLink} width="100%" height="100%" />
+          </Window>
+        ))}
       </section>
 
       {/* need a second section for mobile as the draggable will not function as intended
@@ -177,49 +134,15 @@ function DesktopContainer() {
           iconTitle={"LinkedIn"}
         />
 
-        <WindowMobile
-          icon={folder}
-          iconTitle={"1 Team Project"}
-          pageDescription={"First team project using HTML CSS and Js"}>
-          <Iframe
-            src={"https://matt0107.github.io/imaginaryCountry/"}
-            width="100%"
-            height="100%"
-          />
-        </WindowMobile>
-        <WindowMobile
-          icon={folder}
-          iconTitle={"2 Team Project"}
-          pageDescription={
-            "Second team project using Js React and different node packages"
-          }>
-          <Iframe
-            src={"https://wild-space-explorer.netlify.app/"}
-            width="100%"
-            height="100%"
-          />
-        </WindowMobile>
-        <WindowMobile
-          icon={folder}
-          iconTitle={"3 Team Project"}
-          pageDescription={
-            "Work in progress!!! third team project at the moment optimized only for mobile, Car rental app with a Supabase backend more info to come"
-          }>
-          <Iframe
-            src={"https://car-rentalapp.vercel.app/"}
-            width="100%"
-            height="100%"
-          />
-        </WindowMobile>
-        <WindowMobile
-          icon={folder}
-          iconTitle={"4 Personal Project"}
-          pageDescription={"Coming Soon"}>
-          <h2>Coming Soon ...</h2>
-        </WindowMobile>
-        <WindowMobile icon={folder} iconTitle={"4 Team Project"}>
-          <h2>Coming soon ... </h2>
-        </WindowMobile>
+        {projects.map((e) => (
+          <WindowMobile
+            icon={folder}
+            iconTitle={e.iconTitle}
+            pageDescription={e.pageDescription}
+            externalLink={e.externalLink}>
+            <Iframe src={e.externalLink} width="100%" height="100%" />
+          </WindowMobile>
+        ))}
         <Contact icon={msn} iconTitle={"Contact Me"} />
         <WindowMobile icon={about} iconTitle={"About"}>
           <iframe src={aboutPdf} width="100%" height="100%" title="about" />

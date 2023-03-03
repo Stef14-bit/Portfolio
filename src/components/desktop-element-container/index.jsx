@@ -84,6 +84,10 @@ function DesktopContainer() {
             <Iframe src={e.externalLink} width="100%" height="100%" />
           </Window>
         ))}
+        <Contact icon={msn} iconTitle={"Contact Me"} />
+        <Window icon={about} iconTitle={"About"}>
+          <iframe src={aboutPdf} width="100%" height="100%" title="about" />
+        </Window>
       </section>
 
       {/* need a second section for mobile as the draggable will not function as intended

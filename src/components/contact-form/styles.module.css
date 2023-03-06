@@ -1,7 +1,8 @@
 .desktop_icon {
   background: transparent;
   border: none;
-  margin: 0.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
   min-width: 100px;
 }
 

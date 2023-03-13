@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Windows XP Style Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+his is a Windows XP style portfolio built using ReactJS. The design is inspired by the iconic operating system that many of us grew up using.
+
+## Features
+
+- This portfolio includes resizable and draggable windows, just like in Windows XP. You can resize any window by clicking and dragging the bottom-right corner, and move it around the screen by clicking and dragging the title bar.
+
+## Inspiration
+
+- Initially, I had planned to create a Windows 2000-inspired design, as that was my first encounter with a computer. However, I discovered that someone else had already done something similar, so I decided to switch gears and focus on Windows XP instead. This operating system was one that I spent a lot of time with and it's where I first learned about software, small Windows hacks, and other nifty tricks. While there may be other portfolios out there with a Windows XP theme, this one is my unique spin on it. I had wanted to create a Windows-themed portfolio for some time, and now that I have the skills to do so, I had a blast working on it.
+
+## Node Packages Used
+
+The following Node packages were used to build this portfolio:
+
+### `@emailjs/browser`
+
+This package is used to send emails directly from the browser. It provides a simple API for sending emails, and allows you to use your own email account to send them.
+
+### `react-draggable`
+
+This package is used to make the windows draggable, just like in Windows XP. You can click and drag the title bar of any window to move it around the screen.
+
+### `react-iframe`
+
+This package is used to embed external websites and web applications in iframes. This allows you to showcase your work and projects directly on your portfolio.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+## `Screenshots`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ### Start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Start](https://github.com/Stef14-bit/Portfolio/blob/main/portfolio_screen1.png?raw=true)
 
-### `npm test`
+- ### Contact me
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Start](https://github.com/Stef14-bit/Portfolio/blob/main/portfolio_screen3.png?raw=true)
 
-### `npm run build`
+- ### Window preview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Start](https://github.com/Stef14-bit/Portfolio/blob/main/portfolio_screen4.png?raw=true)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ### Project preview
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Start](https://github.com/Stef14-bit/Portfolio/blob/main/portfolio_screenshot2.png?raw=true)

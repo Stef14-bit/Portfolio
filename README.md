@@ -1,6 +1,6 @@
 # Windows XP Style Portfolio
 
-his is a Windows XP style portfolio built using ReactJS. The design is inspired by the iconic operating system that many of us grew up using.
+This is a Windows XP style portfolio built using ReactJS. The design is inspired by the iconic operating system that many of us grew up using.
 
 ## Features
 

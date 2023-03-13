@@ -79,8 +79,9 @@ function DesktopContainer() {
           <Window
             icon={folder}
             iconTitle={e.iconTitle}
-            pageDescription={e.pageDescription}
-            externalLink={e.externalLink}>
+            pageDescription={e.description}
+            externalLink={e.externalLink}
+            linkName={null || e.linkName}>
             <Iframe src={e.externalLink} width="100%" height="100%" />
           </Window>
         ))}
@@ -142,7 +143,7 @@ function DesktopContainer() {
           <WindowMobile
             icon={folder}
             iconTitle={e.iconTitle}
-            pageDescription={e.pageDescription}
+            pageDescription={e.description}
             externalLink={e.externalLink}>
             <Iframe src={e.externalLink} width="100%" height="100%" />
           </WindowMobile>

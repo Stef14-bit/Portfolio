@@ -18,8 +18,9 @@ const projects = [
   },
   {
     iconTitle: "4 Personal Project",
-    description: "Coming Soon",
-    externalLink: "#",
+    description: "Coming Soon...",
+    linkName: "But you can click HERE to check out the backend of this app",
+    externalLink: "https://github.com/Stef14-bit/backend-groceries_delivery",
   },
 ];
 

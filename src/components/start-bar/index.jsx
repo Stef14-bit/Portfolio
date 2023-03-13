@@ -115,7 +115,18 @@ function Start() {
               icon={folder}
               iconTitle={"4 Personal Project"}
               pageDescription={"Coming Soon"}>
-              <h2>Coming Soon ...</h2>
+              <h2>Coming Soon ... </h2>
+              <h3>
+                But for now click{" "}
+                <a
+                  href="https://github.com/Stef14-bit/backend-groceries_delivery"
+                  target="_blank"
+                  rel="noreferrer">
+                  {" "}
+                  HERE{" "}
+                </a>{" "}
+                to feast your eyes on the backend of this project
+              </h3>
             </WindowMobile>
 
             <hr className={styles.divider} />

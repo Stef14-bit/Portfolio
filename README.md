@@ -26,10 +26,6 @@ This package is used to make the windows draggable, just like in Windows XP. You
 
 This package is used to embed external websites and web applications in iframes. This allows you to showcase your work and projects directly on your portfolio.
 
-## Available Scripts
-
-In the project directory, you can run:
-
 ## `Screenshots`
 
 - ### Start

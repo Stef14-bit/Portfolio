@@ -58,7 +58,10 @@
 .desktop_icon:hover {
   background-color: #1d49afaa;
 }
-.top_section {
+.top_mobile_section {
+  display: flex;
+
+  min-height: 3rem;
   background-color: #79797977;
   text-align: center;
 }

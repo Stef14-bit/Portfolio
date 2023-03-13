@@ -30,8 +30,8 @@ function WindowMobile({ children, icon, iconTitle, pageDescription }) {
                 X
               </button>
             </div>{" "}
-            <div className={styles.top_section}>
-              <p>{pageDescription}</p>
+            <div className={styles.top_mobile_section}>
+              <h4>{pageDescription}</h4>
             </div>
             {children}
           </div>

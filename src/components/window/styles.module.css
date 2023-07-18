@@ -88,6 +88,19 @@
   word-spacing: 1rem;
   cursor: default;
 }
+
+.top_section > a > button {
+  height: 2rem;
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d5d5d5;
+  background-color: #e5383b;
+}
+
 .top_section > p {
   text-align: center;
   color: #1044be;

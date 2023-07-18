@@ -49,7 +49,7 @@ function Window({
                 _Adress
                 <input type="text" value={`Desktop / ${iconTitle}`} />
                 <a href={externalLink} target="_blank" rel="noreferrer">
-                  <button>{linkName}</button>
+                  {linkName && <button>{linkName}</button>}
                 </a>
               </div>
 

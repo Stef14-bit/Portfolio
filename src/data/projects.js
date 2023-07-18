@@ -14,7 +14,7 @@ const projects = [
     iconTitle: "3 Team Project",
     description:
       "Work in progress!!! third team project at the moment optimized only for mobile, Car rental app with a Supabase backend more info to come",
-    externalLink: "https://car-rentalapp.vercel.app/",
+    externalLink: "https://star-rentals.vercel.app/",
   },
   {
     iconTitle: "4 Personal Project",
